@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stock System</title>   
+<!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css"/> 
+<!-- Link to Java Script file. -->
+        <script src="stockSystem.js" defer></script> 
+</head>
+  <!-- Header    -->
+    <header>
+    <br/><h1>Stock System Website</h1><br/>
+  </header>
+    <body>
+    <div>
+<!-- <div id="x" style="text-align: left"></div> -->
+        <br><H1>Add Stock</H1><br>
+  <label for=""><b>Select a Product Code</b></label><br/>
+<!-- Product selection -->
+    <br /><select name="addProduct" id="addProduct" class="dropDownSelector">Select option
+        <option value="0">---Select---</option>
+        <option value="1">PROD001- Camping Chairs</option>
+        <option value="2">PROD002- Tents</option>
+        <option value="3">PROD003- Sleeping Bags</option>
+    </select><br />
+    <br><label for="items received"><b>Items Received</b></label><br />
+<!-- Input field for items received-->
+    <br/><input type="number"   name="itemsReceived" id="itemsReceived"/><br />
+    <br><label for=""><b>Price per Item Received</b></label><br />
+<!-- Input field for item price-->
+    <br/><input type="number" name="priceItem" id="priceItem"/><br />
+    <br><button type="submit" name="addStockBtn" id="addStockBtn" class="submitBtn">
+    <b>&nbsp;&nbsp;Add Stock &raquo;&nbsp;&nbsp;</b></button><br/>
+    </div><br>
+    <br><br><div>
+        <H1>Remove Stock</H1><br>
+        <label for=""><b>Select a Product Code</b></label><br />
+<!-- Product selection for removing items -->
+    <br/><select name="removeProduct" id="removeProduct" class="dropDownSelector">Select option
+        <option value="0">---Select---</option>
+        <option value="1">PROD001- Camping Chairs</option>
+        <option value="2">PROD002- Tents</option>
+        <option value="3">PROD003- Sleeping Bags</option>
+    </select><br/>
+        <br><label for=""><b>Buyer e-mail address</b></label><br />
+<!-- Input field for buyers email -->
+        <br /><input type="email" name="buyerEmail" id="buyerEmail"/><br />
+        <br><label for=""><b>Items bought</b></label><br />
+<!-- Input field for number of items bought-->
+        <br/><input type="number" name="itemsSold" id="itemsSold"/><br />
+        <br><b><p style="color:red;" id="errorMessage"></p></b>
+<!-- Button for removing items -->
+        <button type="submit" name="removeStockBtn" id="removeStockBtn"class="submitBtn">
+        <b>&nbsp;&nbsp;Remove Stock &raquo;&nbsp;&nbsp;</b></button><br/>   
+    </div><br>
+    <br><div>     
+<h1>Product Information</h1><br>
+<table>				
+        <th>Product Code</th>	
+        <th>Product Name</th>	
+        <th>Quantity Available</th>
+        <th>Average Stock Price</th>
+        <th>Cost last purchase</th>     
+        <th>Total Cost</th>
+    </tr> 
+    <tr>				
+        <td id="firstProduct"><b>PROD001</b></td>
+        <td id="firstName"><b>Camping Chairs</b></td>		
+        <td id="firstQuantity"></td>
+        <td id="firstAverage"></td>
+        <td id="firstSubTotal"></td>       
+        <td id="firstGrandTotal"></td>
+    </tr> 
+    <tr>				
+        <td id="secondProduct"><b>PROD002</b></td>
+        <td id="secondName"><b>Tents</b></td>		
+        <td id="secondQuantity"></td>
+        <td id="secondAverage"></td>
+        <td id="secondSubTotal"></td>       
+        <td id="secondGrandTotal"></td>
+    </tr>    
+    <tr>				
+        <td id="thirdProduct"><b>PROD003</b></td>
+        <td id="thirdNecklace"><b>Sleeping bags</b></td>	
+        <td id="thirdQuantity"></td>
+        <td id="thirdAverage"></td>
+        <td id="thirdSubTotal"></td>       
+        <td id="thirdGrandTotal"></td>
+    </tr>       
+    </table>
+    </div>
+</body>
+  <!-- Footer -->
+  <br /><br />
+  <footer>
+        <br><h2>Eric Friedenthal 2022</h2><br/>
+  </footer>
+</html>
+
+

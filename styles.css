@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+html {
+  font-family: "Verdana";
+  display: flex;
+  background-color: rgb(112, 134, 122);
+  cursor: auto;
+  font-size: 1rem;
+  text-align-last: center;
+  width: 100%;
+}
+h1,h2{
+  text-align-last: center;
+}
+header,footer {
+  background-color: #4e70a0;
+  border-radius: 0.9rem;
+  border: 0.35rem solid black ;
+}
+body {
+  max-width: 100vw;
+  width: 100vw;
+  margin: auto;
+  padding: 1rem;
+  min-height: 100vh;
+}
+body input {
+  padding: 0.7rem;
+  border: 0.3rem solid black;
+  border-collapse: collapse;
+  min-width: 12rem;
+  font-size: 1rem;
+  border-radius: 0.9rem;
+  cursor: text;
+}
+body input:focus {
+  border-color: rgb(8, 228, 8);
+}
+textarea {
+  padding: 0.7rem;
+  border: 0.3rem solid black;
+  border-collapse: collapse;
+  height: 20%;
+  width: 100%;
+  font-size: 1.2rem;
+  border-radius: 0.9rem;
+  cursor: text;
+}
+@media screen and (min-width: 300px) and (max-width: 650px) {
+html {
+    background: white;
+  }
+html input {
+    min-width: 83vw;
+    font-size: 1.7rem;
+  }
+html p,label,h2 {
+    text-align-last: left;
+    font-size: 1.7rem;
+  }
+}
+.dropDownSelector {
+  min-width: 10rem;
+  border-radius: 0.9rem;
+  padding: 0.7rem;
+  border: 0.3rem solid black ;
+  border-collapse: collapse;
+}
+th,td {
+  align-items: center;
+  text-align: center;
+  padding: 0.7rem;
+  border: 0.25rem solid black ;
+  border-radius: 0.5rem; 
+}
+th{
+  background-color: #f79e02;
+}
+button.submitBtn {
+  margin-top: 0.5rem;
+  padding: 0.9rem;
+  border: 0.2rem solid black;
+  font-family: bold "Verdana";
+  border-radius: 0.9rem;
+  min-width: 25rem;
+  cursor: pointer;
+  float: center;
+  background-color: #f79e02;
+  border: 0.3rem solid black ;
+}
+button:focus {
+  background-color:  rgb(8, 228, 8);
+}
+
+
