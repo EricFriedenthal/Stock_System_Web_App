@@ -37,9 +37,6 @@ removeStockBtn.addEventListener("click", () =>
 { const sellStock = new StockRemove; sellStock.removeStock(removeProductCode.value,Number(itemsSold.value),buyerEmail.value)});
 
 class StockAdd {
-    addItem;
-    productCode;
-    priceItem;
 
     constructor(addItem,productCode,priceItem) {
         this.addItem =    addItem;
