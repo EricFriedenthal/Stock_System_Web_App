@@ -37,13 +37,7 @@ removeStockBtn.addEventListener("click", () =>
 { const sellStock = new StockRemove; sellStock.removeStock(removeProductCode.value,Number(itemsSold.value),buyerEmail.value)});
 
 class StockAdd {
-
-    constructor(addItem,productCode,priceItem) {
-        this.addItem =    addItem;
-        this.productCode= productCode;
-        this.priceItem =  priceItem;
-       
-    }   
+  
     //Add stock to inventory  
     addStock = function (addItem,productCode,priceItem) {
 
@@ -81,11 +75,7 @@ class StockAdd {
 
 class StockRemove {
       
-    constructor(productCode,removeItem,buyerEmail) {
-        this.productCode = productCode;      
-        this.removeItem = removeItem;
-        this.buyerEmail = buyerEmail;      
-    }     
+     
 // Remove stock from inventory
 removeStock = function (productCode,removeItem,buyerEmail)  {
 
